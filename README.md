@@ -111,6 +111,52 @@ export PROMPT='${COLOR_USR}%n@%M ${COLOR_DIR}%d ${COLOR_GIT}$(parse_git_branch)$
 
 Once the code is saved in the file, just simply restart the Terminal. Voila! branch name and current directory will be visible in Terminal.
 
+## Step 7: MySQL Installation Guide for macOS
+
+This guide outlines the steps to install MySQL and MySQL Workbench on macOS using Homebrew.
+
+##### Step 1: Check Available MySQL Versions
+
+To check the available MySQL versions, run the following command in your terminal:
+
+```
+brew search mysql
+```
+
+This command will display the available MySQL versions. For example, you may see versions like `mysql@5.6`, `mysql@5.7`, or `mysql@8.0`.
+
+##### Step 2: Choose and Install MySQL Version
+
+Choose the desired MySQL version based on your requirements and execute the following command to install it. Replace `mysql@<version>` with the version you want to install (e.g., `mysql@5.6`):
+
+```
+brew install mysql@<version>
+```
+
+##### Step 3: Start MySQL Service
+
+After installing MySQL, start the MySQL service using the following command, replacing `<version>` with the version you installed:
+
+```
+brew services start mysql@<version>
+```
+
+##### Step 4: Install MySQL Workbench
+
+Install MySQL Workbench, a graphical tool for MySQL database development, using the following command:
+
+```
+brew install --cask mysqlworkbench
+```
+
+##### Step 5: Update MySQL Workbench (Optional)
+
+To update the current MySQL Workbench installation to the latest version, use the following command:
+
+```
+brew upgrade mysqlworkbench
+```
+
 ## Additional Resources
 
 - [Official Xcode Documentation](https://developer.apple.com/xcode/)
