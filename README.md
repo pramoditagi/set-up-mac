@@ -1,4 +1,4 @@
-# Setting Up Your Mac for Development
+# Setting up your Mac for development
 
 This guide will walk you through setting up your Mac for software development. Whether you're a beginner or an experienced developer, these steps will help you get your environment ready for coding.
 
@@ -201,26 +201,26 @@ RVM's stable branch hasn't been updated in years, so it doesn't include recent p
 
 Here’s how to switch to the latest head version of RVM, which should include recent patches and improved support for OpenSSL on macOS
 
-1. Get the Latest RVM (Head):
-    This command will pull the latest version directly from the RVM repository, including the most recent patches and fixes:
+##### 1. Get the Latest RVM (Head):
+This command will pull the latest version directly from the RVM repository, including the most recent patches and fixes:
 
-    ```bash
-    rvm get head
-    ```
+```bash
+rvm get head
+```
 
-2. Reload RVM:
-    Reload RVM to apply the updates:
+##### 2. Reload RVM:
+Reload RVM to apply the updates:
 
-    ```bash
-    rvm reload
-    ```
+```bash
+rvm reload
+```
 
-3. Now, you can install any desired version of ruby into the system using RVM.
-    Run the below command to install ruby version 3.2.2 using RVM with openssl 3.
+##### 3. Install desired version of ruby:
+Run the below command to install ruby version 3.2.2 using RVM with openssl 3.
 
-    ```bash
-    rvm install ruby-3.2.2 -C --with-openssl-dir=/usr/local/etc/openssl@3
-    ```
+```bash
+rvm install ruby-3.2.2 -C --with-openssl-dir=/usr/local/etc/openssl@3
+```
 
 Once the installation gets successful, you can verify the list of ruby versions installed by RVM in your system by running below command.
 
@@ -236,7 +236,7 @@ Now, verify the ruby version installed in your system by running below command.
 ruby -v
 ```
 
-If =\* is pointing to any of the ruby version, it means it's the default and current version of ruby which is pointing to in the system.
+If =* is pointing to any of the ruby version, it means it's the default and current version of ruby which is pointing to in the system.
 
 If there are multiple versions of ruby present in your system and if you want to set one particular version as the default version, then use --default flag with the below command.
 
