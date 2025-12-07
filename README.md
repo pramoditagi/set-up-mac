@@ -361,6 +361,8 @@ Java is a high-level, object-oriented programming language known for its portabi
 3. Choose your **operating system** and **architecture**, then click the **Download** link.
 4. Once the download is complete, follow the on-screen instructions to install JDK.
 
+##### Note: Setting up environmental variable (Java Path) is not required for Mac as it will be done through the installation wizard. For windows, it is required.
+
 #### **Verify Installation**
 After installation, open a terminal and run the following command to verify the Java version:
 
